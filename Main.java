@@ -7,6 +7,5 @@ public class Main {
         Keyboard keyboard = new Keyboard();
         Computer computer = new Computer("intel", "x5", processor, ram, hardDrive, monitor, keyboard);
         System.out.println(computer.getTotalWeigth());
-
     }
 }
