@@ -16,8 +16,4 @@ public class Processor {
     public double getProcessorWeigth() {
         return weight;
     }
-
-
-
-
 }

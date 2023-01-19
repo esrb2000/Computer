@@ -1,5 +1,5 @@
 public class Computer {
-    public Processor processor;
+       public Processor processor;
     public Ram ram;
     public HardDrive hardDrive;
     public Monitor monitor;
@@ -20,8 +20,10 @@ public class Computer {
         return new Computer(name, vendor, processor, ram, hardDrive, monitor, keyboard);
     }
     public double getTotalWeigth() {
-        double totalWeigth = processor.getProcessorWeigth();
+        double totalWeigth = processor.getProcessorWeigth() + monitor.getMonitor() + ram.getRam() + keyboard.getKeyboard() + hardDrive.getHardDrive();
         return totalWeigth;
     }
-
+    public String toString() {
+        return "Процессор: " + processor;
+    }
 }
