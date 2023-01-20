@@ -10,10 +10,13 @@ public class Processor {
         this.manufacturer = manufacturer;
         this.weight = weight;
     }
-    public Processor setProcessor(double frequency, int numberOfCores, String manufacturer, double weight) {
-        return new Processor(frequency, numberOfCores, manufacturer, weight);
-    }
+
     public double getProcessorWeigth() {
         return weight;
+    }
+    public String toString() {
+        return "Частота: " + frequency + " Ghz" + "\n" +
+                "Колличество ядер: " + numberOfCores + "\n" +
+                "Производитель: " + manufacturer;
     }
 }

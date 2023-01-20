@@ -11,4 +11,10 @@ public class Ram {
     public double getRam() {
         return weight;
     }
+    public String toString() {
+        return "Оперативная память: " + "\n"
+                + "Тип памяти: " + typeRam + '\n'
+                + "Объем памяти: " + value + " Gb";
+    }
+
 }

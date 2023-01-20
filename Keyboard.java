@@ -7,8 +7,17 @@ public class Keyboard {
         this.keyboardBacklight = keyboardBacklight;
         this.weight = weight;
     }
+    private String getKeyboardBacklight() {
+        if (keyboardBacklight == true) {
+            return "С подсветкой";
+        } else return "Без подсветки";
+    }
     public double getKeyboard() {
         return weight;
     }
-
+    public String toString() {
+        return "Клавиатура: " + "\n"
+                + "Тип: " + typeKeyboard  + '\n'
+                + "Наличие подсветки: " + getKeyboardBacklight();
+    }
 }
