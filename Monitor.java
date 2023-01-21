@@ -3,7 +3,7 @@ public class Monitor {
     private final TypeMonitor typeMonitor;
     private final double weight;
 
-    public Monitor(double diagonal, Monitor typeMonitor, double weight) {
+    public Monitor(double diagonal, TypeMonitor typeMonitor, double weight) {
         this.diagonal = diagonal;
         this.typeMonitor = typeMonitor;
         this.weight = weight;
